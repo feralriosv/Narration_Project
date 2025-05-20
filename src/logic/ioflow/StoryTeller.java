@@ -2,23 +2,23 @@ package logic.ioflow;
 
 import logic.stage.Act;
 
-public class NarrativeVoice {
+public class StoryTeller {
     private final Act act;
-    private InputHandler inputHandler;
+    private final Prompter prompter;
 
-    public NarrativeVoice(Act actToNarrate) {
+    public StoryTeller(Act actToNarrate) {
         this.act = actToNarrate;
+        this.prompter = new Prompter();
     }
 
     public void narrate() {
-        presentScenario();
+        setUpStory();
     }
 
-    private void presentScenario() {
-        narrateSlowly(act.toString());
+    private void setUpStory() {
+        String name = prompter.promptCharacterName();
+        act.assignMainCharacterName(name);
     }
-
-
 
     private void narrateSlowly(String line) {
         for (char letter : line.toCharArray()) {

@@ -1,11 +1,11 @@
 import logic.stage.Act;
 import logic.stage.ActNumbers;
-import logic.ioflow.NarrativeVoice;
+import logic.ioflow.StoryTeller;
 
 public class StoryProgram {
     public static void main(String[] args) {
         Act act = new Act(ActNumbers.I);
-        NarrativeVoice narrativeVoice = new NarrativeVoice(act);
+        StoryTeller narrativeVoice = new StoryTeller(act);
         narrativeVoice.narrate();
     }
 }
