@@ -1,5 +1,7 @@
 package logic.ioflow;
-
+/**
+ * This class handles the inputs made by the user during de program.
+ */
 public class InputHandler {
     public InputHandler() {
     }
@@ -8,7 +10,7 @@ public class InputHandler {
         return input.length() < 13 && !input.isEmpty();
     }
 
-    protected String toCapital(String input) {
+    protected String toCapitalFormat(String input) {
         String first = input.substring(0,1).toUpperCase();
         String second = input.substring(1).toLowerCase();
         return first.concat(second);

@@ -1,11 +1,18 @@
 package logic.model;
 
-import java.util.List;
-
-public class Restaurant extends Scenery {
-
+public class Restaurant implements Scenery {
+    private String name;
     public Restaurant() {
-        super("The Restaurant", List.of(new MainCharacter(), new Employer()));
+
     }
 
+    @Override
+    public String getSceneryName() {
+        return name;
+    }
+
+    @Override
+    public void setSceneryName(String name) {
+        this.name = name;
+    }
 }

@@ -1,7 +1,10 @@
 package logic.ioflow;
 
 import logic.stage.Act;
-
+/**
+ * This class represents the StoryTeller of the story.
+ * It is responsible for managing the narration flow of the story.
+ */
 public class StoryTeller {
     private final Act act;
     private final Prompter prompter;

@@ -1,12 +1,15 @@
 package logic.model;
 
+/**
+ * Represents the main character of the story.
+ *
+ */
 public class MainCharacter implements Character {
     private String name;
-    private PersonalFlaw personalflaw;
+    private PersonalFlaws personalFlaw;
     private String targetCompany;
 
     public MainCharacter() {
-
     }
 
     @Override

@@ -1,6 +1,6 @@
 package logic.model;
 
-public enum PersonalFlaw {
+public enum PersonalFlaws {
     COMMUNICATION,
     ANGER,
     EGOMANIA;

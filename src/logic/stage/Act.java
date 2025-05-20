@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Act {
     private ActNumbers actNumber;
-    private MainCharacter mainCharacter;
+    private final MainCharacter mainCharacter;
     private List<Character> secondaryCharacters;
     private Scenery scenery;
 
